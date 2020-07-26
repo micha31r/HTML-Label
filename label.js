@@ -14,7 +14,6 @@ var label_css = {
 	"margin-bottom": "0",
 	"word-break": "keep-all",
 	"white-space": "nowrap",
-	"filter": "var(--invert-filter)",
 	"opacity": "0.8",
 	/* Make the label unclickable */
 	"pointer-events": "none",
