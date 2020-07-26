@@ -20,12 +20,12 @@ JS that allows you to add popup labels to elements.
 		<!-- The text 'Tag content' will show when this element is hovered -->
 		<div class="has-label">
 			<!-- Your content -->
-			<h3>Example, example, example</h3>
+			<h3>Hover over me!!</h3>
 
 			<!-- Add a element with a class name 'element-label' -->
 			<!-- This must be inside of a 'has-label' element -->
 			<p class="element-label">Tag content</p>
 		</div>
 	</body>
-</html
+</html>
 ```

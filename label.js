@@ -3,13 +3,13 @@ var label_css = {
 	/* Hide all labels */
 	"display": "none",
 	"position": "fixed",
-	"color": "#000",
-	"background-color": "#FFF",
+	"color": "#FFF",
+	"background-color": "#000",
 	"border-radius": "5px",
 	"padding": "10px",
 	"padding-top": "5px",
 	"padding-bottom": "5px",
-	"font-family": ""Arial", sans-serif",
+	"font-family": "'Arial', sans-serif",
 	"font-size": "1rem",
 	"margin-bottom": "0",
 	"word-break": "keep-all",
@@ -52,25 +52,23 @@ function element_label_overflow(label) {
 		label.css("top", $(window).height() - 10 - label.outerHeight());
 	}
 }
-
-auto_run.queue( 
-	function() {
-		$(".element-label").css(label_css);
-		// Show label when hovered
-		$(".has-label").each(
-			function() {
-				$(this).hover(
-					function() {
-						$(this).find(".element-label").show();
-					},
-					function() {
-						$(this).find(".element-label").hide();
-					}
-				);
-			}
-		);
-	}
-);
+ 
+window.onload = function() {
+	$(".element-label").css(label_css);
+	// Show label when hovered
+	$(".has-label").each(
+		function() {
+			$(this).hover(
+				function() {
+					$(this).find(".element-label").show();
+				},
+				function() {
+					$(this).find(".element-label").hide();
+				}
+			);
+		}
+	);
+}
 
 $(document).on(
 	"mousemove", 
